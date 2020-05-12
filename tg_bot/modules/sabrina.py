@@ -272,7 +272,7 @@ __help__ = """
 
 """
 
-__mod_name__ = "🥳 Sabrina Exclusive 🥳"
+__mod_name__ = "🥳 Sabrina Exclusiv"
 
 OWO_HANDLER = DisableAbleCommandHandler("owo", owo, admin_ok=True)
 STRETCH_HANDLER = DisableAbleCommandHandler("stretch", stretch)
