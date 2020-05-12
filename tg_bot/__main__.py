@@ -157,7 +157,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("Bol Bsdk..Muh Me Lega?🤣")
+        update.effective_message.reply_text("Bol Bsdk..Muh Me Lega? 🤣")
 
 def send_start(bot, update):
     #Try to remove old message
