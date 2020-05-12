@@ -27,19 +27,17 @@ def escape_html(word):
     return escape(word)
 
 PM_START_TEXT = """
-Hello *{}* My name is *Sabrina*!
+Hey *{}* :) , I'm *Remotics™* . I'm Here To Manage Your Groups Very Perfectly. I'm The Favourite Bot Of My Master 'Leader Masked'
 
-I'm here to manage your groups! 
+Hit /help To Find Out More About How To Use My Full Potential Use!
 
-Click Help button to find out more about how to use me to my full potential. 
+Made With Love  By : [This Awesome Person](https://t.me/LeaderMasked) .
 
-Join Support Chat ( @SabrinaChat ) if you need any support or help 
+Special Thanks To [This Noob](https://t.me/Unknown_Hacker_X). 
 
-Join ( @SabrinaOfficial ) if you want to keep up with the news, updates and bot downtime!
+A Part Of *Leader* *Empire* 👑
 
-Made by @TechnoAyanOfficial
-
-Want me to help you? [Click Here!](https://t.me/MissSabrina_bot?startgroup=true)
+Want To Add Me Into Your Chats? [Click Here!](http://telegram.me/Remotic_Bot?startgroup=botstart) 
 """
 
 
@@ -47,7 +45,7 @@ Want me to help you? [Click Here!](https://t.me/MissSabrina_bot?startgroup=true)
 
 HELP_STRINGS = """
 
-Hello! my name *{}*.
+Hello! my name *Remotics™*.
 
 *Main* available commands:
  - /start: Start the bot...
@@ -61,7 +59,13 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
-DONATE_STRING = """Hey you can Donate to [Ayan Ansari](t.me/TechnoAyanOfficial) for better server """
+DONATE_STRING = """So You Want To Donate? Amazing!
+
+It Took A Lot Of Work For [My Master](https://t.me/Unknown_Hacker_X) To Get Me To Where I Am Now - So If You Have Some Money To Spare, And Want To Show Your Support; Donate!
+
+After All, Server Fees Don't Pay Themselves - So Every Little Helps! All Donation Money Goes Straight To Funding The VPS, And Of Course, Boosting Morale - Always Nice To See My Work Is Appreciated :). Please Contact [My Master](https://t.me/Unknown_Hacker_X) To Donate. 
+
+Thank You For Your Generosity! """
 
 
 IMPORTED = {}
@@ -153,7 +157,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             send_start(bot, update)
     else:
-        update.effective_message.reply_text("Yo, I'm alive👩")
+        update.effective_message.reply_text("Bol Bsdk..Muh Me Lega?🤣")
 
 def send_start(bot, update):
     #Try to remove old message
@@ -169,10 +173,10 @@ def send_start(bot, update):
                 
     keyboard = [[
         InlineKeyboardButton(text=tld(chat.id, '🥳Add To Group'),
-                             url="https://t.me/MissSabrina_bot?startgroup=true"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")
+                             url="https://t.me/Remotic_Bot?startgroup=true"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")
         ]]
     keyboard += [[
-        InlineKeyboardButton(text=tld(chat.id, '👥 Support Group'), url="https://t.me/SabrinaChat")
+        InlineKeyboardButton(text=tld(chat.id, '👥 Support Group'), url="https://t.me/RemoticBotSupport")
     ]]
 
     update.effective_message.reply_text(
